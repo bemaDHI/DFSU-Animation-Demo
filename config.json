@@ -1,0 +1,156 @@
+{
+  "connectionStrings": {
+    "authURL": "https://localhost:44341",
+    "visualizerURL": "https://localhost:44355",
+    "frontendURL": "https://bemadhi.github.io/DFSU-Animation-Demo"
+  },
+  "modules": {
+    "trackRiskLevel": true,
+    "trackClassification": true,
+    "turbineAlerts": true
+  },
+  "settings": {
+    "performance": {
+      "maxTracksOptions": [10, 50, 100, 200, 250, 500, 750, 1000],
+      "maxTracksOptionsDefault": 250,
+      "retainTimeOptions": [
+        { "seconds": 10, "label": "10s" },
+        { "seconds": 30, "label": "30s" },
+        { "seconds": 60, "label": "60s" },
+        { "seconds": 120, "label": "2min" },
+        { "seconds": 300, "label": "5min" },
+        { "seconds": 600, "label": "10min" }
+      ],
+      "retainTimeOptionsDefault": 60
+    },
+    "map": {
+      "cameraDefaults": {
+        "View2D": {
+          "location": [153.0158, -27.43614],
+          "pitch": 0,
+          "maxPitch": 0,
+          "zoom": 9,
+          "bearing": 0
+        },
+        "View3D": {
+          "location": [10.6573391, 56.15740579],
+          "pitch": 70,
+          "maxPitch": 85,
+          "zoom": 15,
+          "bearing": 0
+        },
+        "ViewFirstPerson": {
+          "location": [10.667317, 56.15829],
+          "pitch": 0,
+          "maxPitch": 85,
+          "bearing": 268,
+          "zoom": 1,
+          "position": [0, 0, 90]
+        }
+      }
+    },
+    "analysis": {
+      "summaryIDs": [
+        {
+          "ID": "Hourly",
+          "densityID": "MuseTrackHourlyDensity",
+          "directionID": null
+        }
+      ]
+    },
+    "riskDefinitions": [
+      {
+        "name": "Low",
+        "label": "Low",
+        "colorUI": "rgb(81, 168, 92)",
+        "colorGFX": [81, 168, 92, 255]
+      },
+      {
+        "name": "Medium",
+        "label": "Medium",
+        "colorUI": "rgb(240, 176, 98)",
+        "colorGFX": [240, 176, 98, 255]
+      },
+      {
+        "name": "High",
+        "label": "High",
+        "colorUI": "rgb(201, 79, 79)",
+        "colorGFX": [201, 79, 79, 255]
+      },
+      {
+        "name": "Unknown",
+        "label": "Unknown",
+        "colorUI": "rgb(130, 130, 130)",
+        "colorGFX": [130, 130, 130, 255]
+      }
+    ],
+    "classificationDefinitions": [
+      {
+        "name": "FAST_TARGET",
+        "label": "Fast Target",
+        "colorUI": "rgb(167,108,115)",
+        "colorGFX": [167, 108, 115, 255]
+      },
+      {
+        "name": "SLOW_TARGET",
+        "label": "Slow Target",
+        "colorUI": "rgb(10,49,80)",
+        "colorGFX": [10, 49, 80, 255]
+      },
+      {
+        "name": "VEHICLE",
+        "label": "Vehicle",
+        "colorUI": "rgb(133, 163, 85)",
+        "colorGFX": [133, 163, 85, 255]
+      },
+      {
+        "name": "SMALL_BIRD",
+        "label": "Small Bird",
+        "colorUI": "rgb(81, 168, 92)",
+        "colorGFX": [81, 168, 92, 255]
+      },
+      {
+        "name": "MEDIUM_BIRD",
+        "label": "Medium Bird",
+        "colorUI": "rgb(248,200,35)",
+        "colorGFX": [248, 200, 35, 255]
+      },
+      {
+        "name": "LARGE_BIRD",
+        "label": "Large Bird",
+        "colorUI": "rgb(199,38,43)",
+        "colorGFX": [199, 38, 43, 255]
+      },
+      {
+        "name": "FLOCK",
+        "label": "Flock",
+        "colorUI": "rgb(120,198,121)",
+        "colorGFX": [120, 198, 121, 255]
+      },
+      {
+        "name": "DRONE",
+        "label": "Drone",
+        "colorUI": "rgb(127,205,187)",
+        "colorGFX": [127, 205, 187, 255]
+      },
+      {
+        "name": "AIRCRAFT",
+        "label": "Aircraft",
+        "colorUI": "rgb(47,12,12)",
+        "colorGFX": [47, 12, 12, 255]
+      },
+      {
+        "name": "UNDEFINED",
+        "label": "Undefined",
+        "colorUI": "rgb(6,28,36)",
+        "colorGFX": [6, 28, 36, 255]
+      },
+      {
+        "name": "Unknown",
+        "label": "Unknown",
+        "colorUI": "rgb(6,28,36)",
+        "colorGFX": [6, 28, 36, 255]
+      }
+    ]
+  }
+}
